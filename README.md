@@ -15,6 +15,14 @@ kN·mm), but all three measure almost the same experimental panel stiffness
 Panel test setup: a 150×100 mm panel, clamped over a 125×75 mm window, loaded
 centrally with a 16 mm diameter hemispherical stainless-steel impactor.
 
+## Status
+
+Complete. `panel_stiffness.py` and `plots.py` both run cleanly and reproduce
+the validated numbers below. The model has been checked against standard CLT
+and Hertz-contact theory (formulas re-derived independently, not just
+run), and the one code issue found — a stale docstring reference to a
+`demo_span_sensitivity()` function that was never written — has been fixed.
+
 ## Findings
 
 1. **The Excel D11 values check out.** Independently rebuilt in Python
